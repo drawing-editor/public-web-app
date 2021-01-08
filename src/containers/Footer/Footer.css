@@ -1,0 +1,24 @@
+.copyright {
+    position: sticky;
+    bottom: 0;
+    margin-top: 700px;
+    margin-left: 35px;
+    font-family: "Varela Round", sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-around;
+    
+}
+
+p {
+    color: #445a9c;
+}
+
+.dot {
+    color:  #2a2b2e;
+}
+
+.classlabel {
+    color: #d44450;
+}

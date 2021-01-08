@@ -1,0 +1,41 @@
+.addImageDialogSearchButtonWrapper {
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.ImageCardList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-around;
+  margin: auto;
+}
+
+.ImageCard {
+  cursor: pointer;
+  width: 18%;
+  margin: auto;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-bottom: 1%;
+}
+
+.ImageCardImage {
+  width: 100%;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ImageCardImage:hover {
+  transform: scale(1.05);
+}
+
+.tabPanel {
+  text-align: center;
+}
+
+.loadMoreButton {
+  margin-top: 1rem;
+}

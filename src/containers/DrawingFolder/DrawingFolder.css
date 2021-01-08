@@ -1,0 +1,43 @@
+.drawing-folder-container{
+  display: flex;
+  position: absolute;
+  top: 140px;
+  /* workspace left + workspace width - 10px = folder left */
+  /* the 10px buffering is for showing the border radius of the folder */
+  left: 790px; 
+}
+
+.folder {
+  box-sizing: border-box;
+  border-left-width: 0px;
+  background-color: rgb(241, 241, 248);
+  border-radius: 10px;
+  display: flex;
+
+  width: 300px;
+  height: 540px;
+}
+
+.tabs{
+  width: 100%;
+}
+
+.canvas-controls {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(241, 241, 248,0.5);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.canvas-controls .MuiSvgIcon-root{
+  margin-top: 3px !important;
+  padding: 8px 8px !important;
+}
+
+.MuiSvgIcon-root:hover {
+  cursor: pointer;
+}

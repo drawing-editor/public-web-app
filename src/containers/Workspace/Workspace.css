@@ -1,0 +1,25 @@
+.Workspace {
+  position: absolute;
+  top: 140px;
+  left: 120px;
+
+  box-sizing: border-box;
+  border-left-width: 0px;
+  background-color: white;
+
+  width: 680px;
+  height: 540px;
+  overflow: hidden;
+}
+
+#workspace-canvas,
+#workspace-svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* text objects on canvas */
+.Workspace text {
+  cursor: default;
+}

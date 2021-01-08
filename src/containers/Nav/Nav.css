@@ -1,0 +1,20 @@
+h1 {
+    margin-left: 50px;
+    color:rgb(117, 187, 187);
+    font-family: "Varela Round",sans-serif;
+    font-size: 2rem;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 935px;
+    align-items: center;
+}
+
+.navbar .items{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

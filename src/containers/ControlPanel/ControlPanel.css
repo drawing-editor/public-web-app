@@ -1,0 +1,163 @@
+.ControlPanel {
+  position: absolute;
+  top: 140px; /* same as workspace*/
+  left: 50px;
+  box-sizing: border-box;
+  width: 70px; /* ControlPanel left + ControlPanel width = Workspace left */
+  height: 580px;
+  user-select: none;
+}
+
+#sidebar {
+  width: 70px;
+  height: 580px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: stretch;
+}
+
+.Disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.ButtonIcon {
+  padding: 10px 10px;
+  font-size: 1.1rem;
+  margin: 5px 5px;
+}
+
+.ButtonIcon:hover {
+  padding: 10px 10px;
+  border-radius: 50px;
+  background-color: rgb(245, 245, 245);
+}
+
+.Modes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Mode {
+  flex-shrink: 0;
+  padding: 10px 10px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mode.Active {
+  border-radius: 50px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.Mode:hover {
+  border-radius: 50px;
+  background-color: rgb(245, 245, 245);
+}
+
+
+.Modes.Disabled .Mode {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.Mode img {
+  max-width: 60%;
+  max-height: 70%;
+}
+
+.Mode .ColorBlock {
+  width: 40px;
+  height: 20px;
+  border: 1px solid lightgray;
+  user-select: none;
+}
+
+.Mode .Outline {
+  position: absolute;
+}
+
+.Mode .Fill {
+  position: relative;
+}
+
+.colorPicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorPicker .swatch {
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  margin-top: 20px;
+}
+
+#topbar {
+  position: absolute;
+  top: -50px; /* weird fix for placing topbar relative to workspace and control panel*/
+  left: 0px;
+  height: 40px;
+  width: 870px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#topbar .items{
+  position: absolute;
+  top: 0px;
+  left: 740px;
+  width: 300px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#border-width {
+  display: flex;
+  flex-direction: row;
+}
+ 
+#slider {
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  margin-left: 56px;
+  margin-top: 8px;
+  padding: 10px 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#e4e7ee;
+  border-radius: 10px;
+}
+
+#slider .bar {
+  width: 82%;
+}
+
+#slider .input {
+  width: 18%;
+  margin-left: 10px;
+}
+
+.items button {
+  width: 120px;
+  height: 40px;
+}
